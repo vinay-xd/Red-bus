@@ -43,7 +43,7 @@ function BusCard({ imgurl, title, busType, departureTime, departureLocation, dur
 
 
     const avalblseats = (seat) => (AvaliableSeats.includes(seat));
-    console.log(seatBooking);
+    // console.log(seatBooking);
     const selectedSeat = (seat) => seatBooking.includes(seat)
 
     const generateSeats = (array, key = '') => {
@@ -71,7 +71,7 @@ function BusCard({ imgurl, title, busType, departureTime, departureLocation, dur
         <>
             <div>
                 <div className='Buscard shadow-xl border rounded py-4 px-6 group '>
-                    <div className='grid grid-cols-8 mb-10 relative'>
+                    <div className='grid grid-cols-8 mb-10 '>
                         {imgurl && <div className='w-[80px] h-[36px] mb-1 col-span-8'><img className='w-[100%] h-[100%] object-cover' src={imgurl} alt="" /></div>}
                         <h4 className='font-[700] text-[14px] col-span-2'>{title}</h4>
                         <h4 className='font-[700] text-[20px]'> {departureTime}</h4>
